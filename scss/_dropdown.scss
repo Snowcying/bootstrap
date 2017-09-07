@@ -22,6 +22,20 @@
   }
 }
 
+.dropright {
+  .dropdown-menu {
+    margin-top: -1px;
+    margin-left: 2px;
+  }
+
+  .dropdown-toggle {
+    @include caret(right);
+    &::after {
+      vertical-align: 0;
+    }
+  }
+}
+
 // The dropdown menu
 .dropdown-menu {
   position: absolute;
